@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/256/826/826070.png?semt=ais_hybrid" type="image/x-icon">
+
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+</head>
+<body>
+<header>
+    <h1 class="logo"><span>T</span>ravel .</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#Home" class="active">Home</a></li>
+            <li><a href="#Book">Book</a></li>
+            <li><a href="#Packages">Packages</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Garllery">Garllery</a></li>
+            <li><a href="#Rewiew">Review</a></li>
+            <li><a href="#Contact">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <i id="menu" class="ri-menu-search-fill"></i>
+    <i id="close" class="ri-close-large-fill"></i>
+</header>
+
+<section id="Home" class="Home">
+
+    <div class="video-con">
+        <video src="./videoplayback.webm" loop muted autoplay></video>
+    </div>
+    <div class="content">
+        <h1>Discover the <span> <br> world's </span>wonders</h1>
+        <p>Discover The World's Wonders" is a general phrase that can be used to describe various activities or content aimed at exploring and learning about some of the most amazing and awe-inspiring places and phenomena on Earth. This can include natural wonders, architectural marvels, cultural heritage sites, and other incredible locations or events. Here are some key points that might be included in information about discovering the world's wonders:</p>
+       
+    </div>
+</section>
+
+
+
+<section id="Book"  class="Book">
+    <h1 class="heading">
+        <span>B</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span style="background-color: transparent;"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+        
+    </h1>
+  <div class="content">
+    <div class="img-con">
+        <img src="https://images.unsplash.com/photo-1516546453174-5e1098a4b4af?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+    </div>
+
+    <form class="reg-form">
+        <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <h1 class="form-heading">Registration</h1>
+                <form action="submit_phpcrm_form.php" method="POST">
+                  <div class="row">
+                    <div class="col-50">
+                      <input type="text" id="fname" required  name="name" placeholder="Name">  
+                    </div>
+                   </div>
+                        <div class="row">
+                      <div class="col-50">
+                          <input type="email" name="email" required placeholder="Email">
+                      </div>
+                      <div class="col-50">
+                         <input type="number" name="phone" required placeholder="Phone">
+                     </div>
+                  </div>
+                      <div class="row">
+                        <div class="col-50">
+                          <input type="text" id="address" name="address" placeholder="Address">
+                        </div>     
+                   </div>
+                   <div class="row">
+                       <div class="col-50">
+                           <input type="text" name="city" required placeholder="City">
+                       </div>
+                       <div class="col-50">
+                          <input type="text" name="state" required placeholder="State">
+                      </div>
+                   </div>
+                   <div class="row">
+                      <div class="col-50">
+                          <input type="number" name="zip_code" required placeholder="Zip Code">
+                      </div>
+                      <div class="col-50">
+                         <input type="text" name="country" required placeholder="Country">
+                     </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-50">
+                          <label >Check In</label>
+                          <input type="date" name="check_in_date" required >
+                      </div>
+                      <div class="col-50">
+                          <label>Check Out</label>
+                         <input type="date" name="check_out_date" required >
+                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-50">
+                        <input type="number" name="no_of_person" placeholder="No Of Person" required >
+                    </div>
+                    <div class="col-50">
+                      <select name="no_of_male" >
+                        <option value="null">Male</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                    </div>
+                </div>
+                 <div class="row">
+                  <div class="col-50">
+                      <select name="no_of_female" >
+                        <option value="null">Female</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+                  </div>
+                  <div class="col-50">
+                    <select name="no_of_kids" >
+                      <option value="null">Kids</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                    </select>
+                </div>
+                </div>
+                  <input type="submit" value="Book Now" class="btn">
+                 </div>
+                 </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          
+    </form>
+
+  </div>
+ 
+</section>
+
+
+<section id="Packages"  class="Packages">
+    <h1 class="heading">
+        <span>P</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+        
+    </h1>
+
+    <div class="card">
+        <div class="card-box">
+            <div class="img-con">
+                <img src="https://images.unsplash.com/photo-1500301111609-42f1aa6df72a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <h1>Paris</h1>
+            <p> Paris, the capital of France, is known for its rich history, stunning architecture, and vibrant culture. Here are some key highlights and facts about Paris:</p>
+            <h2>$<span>6000</span></h2>
+
+        </div>
+
+        <div class="card-box">
+            <div class="img-con">
+                <img src="https://images.unsplash.com/photo-1470756544705-1848092fbe5f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFraXN0YW58ZW58MHx8MHx8fDA%3D" alt="">
+            </div>
+            <h1>Pakistan</h1>
+            <p> Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia known for its rich cultural heritage, diverse landscapes, and strategic geopolitical importance. Here are some key highlights and facts about Pakistan:</p>
+            <h2>$<span>8000</span></h2>
+
+        </div>
+        <div class="card-box">
+            <div class="img-con">
+                <img src="https://plus.unsplash.com/premium_photo-1697730376263-90da9f2a1238?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8a2FyYWNoaXxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <h1>India</h1>
+            <p>India, officially the Republic of India, is a country in South Asia known for its diverse culture, rich history, and significant global influence. Here are some key highlights and facts about India:</p>
+            <h2>$<span>6000</span></h2>
+
+        </div>
+        <div class="card-box">
+            <div class="img-con">
+                <img src="https://images.unsplash.com/photo-1512100356356-de1b84283e18?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <h1>Paris</h1>
+            <p> Paris, the capital of France, is known for its rich history, stunning architecture, and vibrant culture. Here are some key highlights and facts about Paris:</p>
+            <h2>$<span>7000</span></h2>
+
+        </div>
+        <div class="card-box">
+            <div class="img-con">
+                <img src="https://images.unsplash.com/photo-1553342385-111fd6bc6ab3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <h1>Paris</h1>
+            <p> Paris, the capital of France, is known for its rich history, stunning architecture, and vibrant culture. Here are some key highlights and facts about Paris:</p>
+            <h2>$<span>12000</span></h2>
+
+        </div>
+        <div class="card-box">
+            <div class="img-con">
+                <img src="https://images.unsplash.com/photo-1442570468985-f63ed5de9086?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <h1>Paris</h1>
+            <p> Paris, the capital of France, is known for its rich history, stunning architecture, and vibrant culture. Here are some key highlights and facts about Paris:</p>
+            <h2>$<span>4000</span></h2>
+
+        </div><div class="card-box">
+            <div class="img-con">
+                <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <h1>Paris</h1>
+            <p> Paris, the capital of France, is known for its rich history, stunning architecture, and vibrant culture. Here are some key highlights and facts about Paris:</p>
+            <h2>$<span>4000</span></h2>
+
+        </div><div class="card-box">
+            <div class="img-con">
+                <img src="https://images.unsplash.com/photo-1476157808914-828d68f0f401?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <h1>Paris</h1>
+            <p> Paris, the capital of France, is known for its rich history, stunning architecture, and vibrant culture. Here are some key highlights and facts about Paris:</p>
+            <h2>$<span>9000</span></h2>
+
+        </div><div class="card-box">
+            <div class="img-con">
+                <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            </div>
+            <h1>Paris</h1>
+            <p> Paris, the capital of France, is known for its rich history, stunning architecture, and vibrant culture. Here are some key highlights and facts about Paris:</p>
+            <h2>$<span>1000</span></h2>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section id="Services" class="Services">
+    <h1 class="heading">
+        <span>S</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+        
+    </h1>
+    <div class="card">
+        <div class="card-box">
+          <i class="ri-hotel-fill"></i>
+            <h1>Affordable Hotels</h1>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque minima commodi ad nihil molestiae rem, ipsa perferendis odio magni quisquam assumenda dicta cumque ex aperiam magnam temporibus dolorum accusantium tempore.</p>
+        </div>
+
+        <div class="card-box">
+            <i class="ri-restaurant-line"></i>
+              <h1>Food And Drinks</h1>
+              <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque minima commodi ad nihil molestiae rem, ipsa perferendis odio magni quisquam assumenda dicta cumque ex aperiam magnam temporibus dolorum accusantium tempore.</p>
+          </div>
+  
+          <div class="card-box">
+            <i class="ri-megaphone-line"></i>
+              <h1>Safty Guide</h1>
+              <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque minima commodi ad nihil molestiae rem, ipsa perferendis odio magni quisquam assumenda dicta cumque ex aperiam magnam temporibus dolorum accusantium tempore.</p>
+          </div>
+  
+          <div class="card-box">
+            <i class="ri-earth-line"></i>
+              <h1>Around The World</h1>
+              <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque minima commodi ad nihil molestiae rem, ipsa perferendis odio magni quisquam assumenda dicta cumque ex aperiam magnam temporibus dolorum accusantium tempore.</p>
+          </div>
+  
+          <div class="card-box">
+            <i class="ri-flight-takeoff-line"></i>
+              <h1>Fasrest Travel</h1>
+              <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque minima commodi ad nihil molestiae rem, ipsa perferendis odio magni quisquam assumenda dicta cumque ex aperiam magnam temporibus dolorum accusantium tempore.</p>
+          </div>
+  
+          <div class="card-box">
+            <i class="ri-walk-fill"></i>
+              <h1>Adventures</h1>
+              <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque minima commodi ad nihil molestiae rem, ipsa perferendis odio magni quisquam assumenda dicta cumque ex aperiam magnam temporibus dolorum accusantium tempore.</p>
+          </div>
+  
+
+
+        </div>
+</section>
+
+
+<section id="Garllery" class="Garllery">
+    <h1 class="heading">
+        <span>G</span>
+        <span>a</span>
+        <span>r</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+        
+    </h1>
+    <div class="card">
+        <div class="card-box">
+         <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTd8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <div class="content">
+                <h1>Amazing Place</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                <button>See More</button>
+            </div>
+        </div>
+
+        <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA5fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="content">
+                   <h1>Amazing Place</h1>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                   <button>See More</button>
+               </div>
+           </div>
+
+           <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIxfHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="content">
+                   <h1>Amazing Place</h1>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                   <button>See More</button>
+               </div>
+           </div>
+
+           <div class="card-box">
+            <img src="https://plus.unsplash.com/premium_photo-1679830513873-5f9163fcc04a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTMyfHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="content">
+                   <h1>Amazing Place</h1>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                   <button>See More</button>
+               </div>
+           </div>
+
+           <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1520483601560-389dff434fdf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM5fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="content">
+                   <h1>Amazing Place</h1>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                   <button>See More</button>
+               </div>
+           </div>
+
+           <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1558979158-65a1eaa08691?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUxfHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="content">
+                   <h1>Amazing Place</h1>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                   <button>See More</button>
+               </div>
+           </div>
+
+           <div class="card-box">
+            <img src="https://plus.unsplash.com/premium_photo-1700486008549-a0b0000b6f53?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY3fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="content">
+                   <h1>Amazing Place</h1>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                   <button>See More</button>
+               </div>
+           </div>
+
+           <div class="card-box">
+            <img src="https://plus.unsplash.com/premium_photo-1699566447802-0551b84a186d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc5fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="content">
+                   <h1>Amazing Place</h1>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                   <button>See More</button>
+               </div>
+           </div>
+
+           <div class="card-box">
+            <img src="https://images.unsplash.com/photo-1426086800127-2601510ca027?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTg5fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D" alt="">
+               <div class="content">
+                   <h1>Amazing Place</h1>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum consequatur dignissimos doloribus fuga! Suscipit laboriosam in sunt iusto, vel voluptas!</p>
+                   <button>See More</button>
+               </div>
+           </div>
+        </div>
+
+</section>
+
+
+<section id="Rewiew" class="Rewiew">
+    <h1 class="heading">
+        <span>R</span>
+        <span>e</span>
+        <span>w</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+      
+        
+    </h1>
+<div class="cards">
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://media.istockphoto.com/id/1534532471/photo/smiling-teenage-girl-wearing-headphones-typing-on-laptop.webp?b=1&s=170667a&w=0&k=20&c=h63zV6axh25UCuCX_pGWr-YdN28HEyGdbCwYMjicR54=" alt="">
+            <p>Tony</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+
+
+
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://media.istockphoto.com/id/1618702065/photo/teenage-girl.webp?b=1&s=170667a&w=0&k=20&c=Y9hOjLc5qKn_R43sk-URSDPIY1p8zLOBsdFmu1pJdBw=" alt="">
+            <p>Jane</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+
+
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://media.istockphoto.com/id/157434519/photo/depressed-boy-in-school-hallway.webp?b=1&s=170667a&w=0&k=20&c=ibHIRbUCblkUYHpevhU0PNGWot0-fZbAuX7mpKCG1UI=" alt="">
+            <p>Brian</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://media.istockphoto.com/id/1488908366/photo/teenager-at-mental-health-office.webp?b=1&s=170667a&w=0&k=20&c=GtLQ1fjKUc-iOHQ4PGo6l_J068VrDHEO1oGCYv1LtEc=" alt="">
+            <p>Roger</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+
+
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://media.istockphoto.com/id/1611892610/photo/portrait-of-a-young-student-with-a-school-bag-the-teenager-smiles-and-looks-at-the-camera.webp?b=1&s=170667a&w=0&k=20&c=0i5CWBkCnd4dONZLwul5y_2H4DQSGQHdeJCXTpxcSo4=" alt="">
+            <p>John</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+
+
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://plus.unsplash.com/premium_photo-1690579805323-ce7193c0755d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJveXMlMjBkcHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <p>jonna</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://images.unsplash.com/photo-1592046285097-6cdf4daf0d69?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym95c3xlbnwwfHwwfHx8MA%3D%3D" alt="">
+            <p>Anik</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://media.istockphoto.com/id/1152272245/photo/pretty-blond-teenage-girl-close-up.webp?b=1&s=170667a&w=0&k=20&c=tozihsMyFwTeskjX9Kb8gc9zkCd8A5HRiGa-hxIFIU8=" alt="">
+            <p>Donna</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+    <div class="Review-cards">
+        <div class="img-con">
+            <img src="https://images.unsplash.com/photo-1532170579297-281918c8ae72?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cnVzc2lhbiUyMGdpcmx8ZW58MHx8MHx8fDA%3D" alt="">
+            <p>Laura</p>
+        </div>
+        <div class="star-box">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nulla! Similique pariatur inventore, saepe recusandae nisi unde cupiditate sequi. Amet?</p>
+    </div>
+</div>
+
+</section>
+
+
+<section id="Contact" class="Contact" >
+
+    <h1 class="heading">
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+      
+        
+    </h1>
+  <div class="contact-from">
+        <form action="">
+            
+    <form class="reg-form">
+        <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <h1 class="form-heading">Contact Us</h1>
+                <form action="submit_phpcrm_form.php" method="POST">
+                  <div class="row">
+                    <div class="col-50">
+                      <input type="text" id="fname" required  name="name" placeholder="Name">  
+                    </div>
+                   </div>
+                        <div class="row">
+                      <div class="col-50">
+                          <input type="email" name="email" required placeholder="Email">
+                      </div>
+                      <div class="col-50">
+                         <input type="number" name="phone" required placeholder="Phone">
+                     </div>
+                  </div>
+                      <div class="row">
+                        <div class="col-50">
+                          <input type="text" id="address" name="address" placeholder="Address">
+                        </div>     
+                   </div>
+                   <div class="row">
+                       <div class="col-50">
+                           <input type="text" name="city" required placeholder="City">
+                       </div>
+                       <div class="col-50">
+                          <input type="text" name="state" required placeholder="State">
+                      </div>
+                   </div>
+                   <div class="row">
+                      <div class="col-50">
+                          <input type="number" name="zip_code" required placeholder="Zip Code">
+                      </div>
+                      <div class="col-50">
+                         <input type="text" name="country" required placeholder="Country">
+                     </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-50">
+                          <input type="date" name="check_in_date" required >
+                      </div>
+                     
+                  </div>
+                  <div class="row">
+                      <div class="col-50">
+                        <textarea  id="text-area" placeholder="Massage...."></textarea>
+                    
+                    </div>
+                </div>
+                 <div class="row">
+                  
+                 
+                </div>
+                  <input type="submit" value="submit" class="btn">
+                 </div>
+                 </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </form>
+  </div>
+
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3>Travel Website</h3>
+        <p>Explore the world's wonders with us. Find the best travel deals and make your dream vacation come true.</p>
+        <ul class="socials">
+            <li><a href="#"><i class="ri-facebook-box-fill"></i></a></li>
+            <li><a href="#"><i class="ri-twitter-fill"></i></a></li>
+            <li><a href="#"><i class="ri-instagram-fill"></i></a></li>
+            <li><a href="#"><i class="ri-linkedin-box-fill"></i></a></li>
+            <li><a href="#"><i class="ri-youtube-fill"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Travel Website. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
